@@ -48,7 +48,7 @@ function CommonForm({ formControls, buttonText, formData, setFormData, onSubmit 
         background:'lightgreen',
         alignItems: 'center',
         width: '105%',
-        height:'150px',
+        height:'180px',
         borderRadius: '10px',
       }}
     >
