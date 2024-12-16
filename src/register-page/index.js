@@ -4,7 +4,7 @@ import { AuthContext } from '../context';
 import { registerFormControls } from '../config';
 
 function RegisterPage() {
-  const { registerFormData, setRegisterFormData, registerOnSubmit } = useContext(AuthContext) || {};
+  const { registerFormData, setRegisterFormData, registerOnSubmit } = useContext(AuthContext);
 
   // Safeguard for missing AuthContext values
   if (!registerFormData || !setRegisterFormData || !registerOnSubmit) {
@@ -29,25 +29,25 @@ function RegisterPage() {
 
   return (
     <div
-      style={{
+        style={{
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
         justifyContent: 'center',
         minHeight: '100vh',
-        backgroundColor: '#f5f5f5',
+        backgroundColor: 'green',
         fontFamily: 'Arial, sans-serif',
       }}
     >
       <div
-        style={{
+          style={{
           width: '100%',
-          maxWidth: '400px',
+          maxWidth: '200px',
           padding: '20px',
           backgroundColor: '#fff',
-          borderRadius: '8px',
+          borderRadius: '15px',
           boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
-        }}
+        }} 
       >
         <h3 style={{ color: '#333', fontSize: '24px', marginBottom: '10px', textAlign: 'center' }}>
           Welcome
@@ -60,7 +60,7 @@ function RegisterPage() {
           formData={registerFormData}
           setRegisterFormData={setRegisterFormData}
           onSubmit={registerOnSubmit}
-          buttonText="Save"
+          buttonText='save'
         />
       </div>
     </div>

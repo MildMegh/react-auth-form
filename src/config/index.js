@@ -17,5 +17,6 @@ export const registerFormControls = [
         placeholder : 'Enter your password',
         componentType : 'input',
         type : 'password'
-    }
+    },
+   
 ]

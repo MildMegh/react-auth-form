@@ -1,15 +1,19 @@
 import React from 'react';
 
-function CommonInput({ type, placeholder,name, value, onChange, className }) {
+function CommonInput({ type, placeholder,name, value, onChange, className, style }) {
+
   return (
-    <input
-      type={type || 'text'}
-      placeholder={placeholder || 'Enter Value here'}
-      value={value}
-      onChange={onChange}
-      className={className || 'w-full block border'}
-      name={name}
-    />
+      <div>
+        <input
+          type={type || 'text'}
+          placeholder={placeholder || 'Enter Value here'}
+          value={value}
+          onChange={onChange}
+          className={className || 'w-full block border'}
+          name={name}
+          style={style}
+        />
+      </div>
   );
 }
 

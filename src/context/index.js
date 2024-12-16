@@ -13,7 +13,7 @@ export default function AuthState({ children }) {
 
 
     function registerOnSubmit(){
-        
+
     }
 
     return <AuthContext.Provider value={{ registerFormData, setRegisterFormData, registerOnSubmit }}>
