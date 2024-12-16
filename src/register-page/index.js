@@ -42,7 +42,7 @@ function RegisterPage() {
       <div
           style={{
           width: '100%',
-          maxWidth: '200px',
+          maxWidth: '190px',
           padding: '20px',
           backgroundColor: '#fff',
           borderRadius: '15px',
